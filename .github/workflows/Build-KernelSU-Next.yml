@@ -5,15 +5,15 @@ on:
       CPU:
         description: "分支"
         required: true
-        default: 'sm7675'
+        default: 'sm8650'
       FEIL:
         description: "配置文件"
         required: true
-        default: 'oneplus_ace_3v_v'
+        default: 'oneplus_pad2_v'
       CPUD:
         description: "处理器代号"
         required: true
-        default: 'pineapple'
+        default: 'lanai'
       ANDROID_VERSION:
         description: "内核安卓版本"
         required: true
@@ -26,12 +26,12 @@ on:
         description: "添加 KSU Next"
         required: true
         type: boolean
-        default: false
+        default: true
       SUSFS_ENABLED:
         description: "添加 SUSFS"
         required: true
         type: boolean
-        default: false
+        default: true
 jobs:
   build:
     runs-on: ubuntu-latest
